@@ -1,0 +1,5 @@
+D:\Workshop\PotatoPomodoro\PotatoPomodoro\bin\Release\net8.0-windows\publish\PotatoPomodoro.exe
+D:\Workshop\PotatoPomodoro\PotatoPomodoro\bin\Release\net8.0-windows\publish\PotatoPomodoro.dll
+D:\Workshop\PotatoPomodoro\PotatoPomodoro\bin\Release\net8.0-windows\publish\PotatoPomodoro.deps.json
+D:\Workshop\PotatoPomodoro\PotatoPomodoro\bin\Release\net8.0-windows\publish\PotatoPomodoro.runtimeconfig.json
+D:\Workshop\PotatoPomodoro\PotatoPomodoro\bin\Release\net8.0-windows\publish\PotatoPomodoro.pdb

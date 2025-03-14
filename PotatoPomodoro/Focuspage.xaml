@@ -1,0 +1,40 @@
+﻿<Page x:Class="PotatoPomodoro.FocusPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PotatoPomodoro"
+        mc:Ignorable="d"
+        Title="Potato Pomodoro Timer">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Pomodoro" Foreground="LightGray" FontSize=" 24" HorizontalAlignment="Center" />
+        <TextBlock Name="NotificationText"  Text="Test" FontSize="20" Foreground="LightGray" HorizontalAlignment="Center" Margin="0,50,0,0"/>
+        <TextBlock Grid.Row="1" Name="TimerText" Text="25:00" Foreground="LightGray" FontSize="40" FontWeight="Bold"
+                   HorizontalAlignment="Center" Margin="0,15,0,0"  />
+        <Grid Grid.Row="2" Width="300" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <!-- 每个列均分宽度 -->
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Name="StartButton" Content="▶"  Grid.Column="0" Click="StartTimer" Margin="5"/>
+            <Button Name="PauseButton" Content="⏸"  Grid.Column="1" Click="PauseTimer" Margin="5"/>
+            <Button Name="ResetButton" Content="🔄"  Grid.Column="2" Click="ResetTimer" Margin="5"/>
+        </Grid>
+    </Grid>
+</Page>
